@@ -1,10 +1,10 @@
 @import '../../styles/themes/default.css';
 
-.container {
+.gameCard {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 8vw;
+  height: 12vh;
   padding: 10px;
-  background-color: var(--secondary-color);
-
+  background-color: var(--background-color);
 }
