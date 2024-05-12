@@ -1,0 +1,10 @@
+@import '../../styles/themes/default.css';
+
+.gameCard {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  padding: 10px;
+  background-color: red;
+
+}

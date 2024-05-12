@@ -1,10 +1,15 @@
 import TaskArea, { TODO } from '../../components/TaskArea';
 import Sidebar from '../../components/Sidebar';
 
+import { useNavigate } from 'react-router-dom';
+
 import styles from './Home.module.css';
 import { useState } from 'react';
 
 export default function Home() {
+  const navigate = useNavigate();
+  const handleClick = () => navigate("/teste");
+
   const [modal, setModal] = useState(false);
   const [todos, setTodos] = useState<TODO[]>([
     {
@@ -84,6 +89,9 @@ export default function Home() {
         onDelete={onDelete}
         onEdit={onEdit}
       />
+
+      <button type='button' onClick={handleClick}>Trocar de tela</button>
+
     </div>
   );
 }
